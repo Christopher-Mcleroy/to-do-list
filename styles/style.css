@@ -68,3 +68,12 @@ span[contenteditable] {
     outline: 0px solid transparent;
   }
 
+
+.fa-trash {
+    display: none!important;
+}
+    
+.todo-item:hover > .fa-trash{
+    display: block!important;
+}
+
