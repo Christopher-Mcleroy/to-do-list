@@ -1,3 +1,4 @@
+/* ************************applied to all********************************************************************* */
 * {
     margin: 0;
     padding: 0;
@@ -7,80 +8,92 @@
 body{
     font-family: sans-serif;
     background: linear-gradient(217deg, rgba(0, 252, 13, 0.8), rgba(247, 252, 0, 0.0) 70.71%),
-            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
     height: 100vh;
     line-height: 1.5;
     letter-spacing: 1.1px;
 }
 
+/* ************************Container to all********************************************************************* */
 .container {
     width: 400px;
     margin: 150px auto;
     background-color: rgb(250, 252, 255);
 }
 
-/* input and + button and h1 */
- h1 {
-        padding: 20px;
-        display: inline-block;
-        font-weight: 200;
-        font-size: 2rem;
-    }
+/* ************************h1 and + button to all********************************************************************* */
+.to-do-title{
+    background-color: #2675B2;
+    color:white;
+}
+h1 {
+    padding: 10px;
+    display: inline-block;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
 input{
     width: 400px;
     border: 1px solid grey;
+    height: 60px;
+    border: none;
+    outline: none;
+    padding:10px;
 }
 .fa-plus {
     float: right;
-    margin: 30px;
+    margin: 10px;
 }
 .hide{
     display: none;
 }
 
-/* todo item box */
-.checked{
-    color: grey;
-    text-decoration: line-through;
-}
+/* ************************todo item box to all********************************************************************* */
+.dont-break-out {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+  
 i{
     padding: 5px;
 }
+#list-items span{
+    width: 300px;   
+}
+#list-items div:nth-child(even){
+    background-color: rgb(221, 221, 221);
+}
+#list-items{
+    position: relative;
+}
+
+/* ************************todo item to all********************************************************************* */
+.todo-item{
+    padding: 10px;
+    
+}
+span[contenteditable] {
+    outline: 0px solid transparent;
+}
+
+
+.fa-trash {
+    display: none!important;
+}
+
+.todo-item:hover > .fa-trash{
+    display: block!important;
+}
+
 .fa-trash {
     float: right;
 }
 .fa-square{
     float: left;
 }
-#list-items span{
-    width: 300px;   
-}
-#list-items div{
-    padding: 15px;
-}
-#list-items{
-    position: relative;
-}
-#list-items div:nth-child(even){
-    background-color: rgb(221, 221, 221);
-}
-span[contenteditable] {
-    outline: 0px solid transparent;
-  }
 
-
-.fa-trash {
-    display: none!important;
-}
-    
-.todo-item:hover > .fa-trash{
-    display: block!important;
+.checked{
+    color: grey;
+    text-decoration: line-through;
 }
 
-.dont-break-out {
-
-    /* These are technically the same, but use both */
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-  
-  }
