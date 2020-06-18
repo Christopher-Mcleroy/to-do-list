@@ -6,7 +6,7 @@
 }
 body{
     font-family: sans-serif;
-    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    background: linear-gradient(217deg, rgba(0, 252, 13, 0.8), rgba(247, 252, 0, 0.0) 70.71%),
             linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
     height: 100vh;
     line-height: 1.5;
@@ -47,7 +47,7 @@ i{
     padding: 5px;
 }
 .fa-trash {
-    float: left;
+    float: right;
 }
 .fa-square{
     float: left;
@@ -77,3 +77,10 @@ span[contenteditable] {
     display: block!important;
 }
 
+.dont-break-out {
+
+    /* These are technically the same, but use both */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  
+  }

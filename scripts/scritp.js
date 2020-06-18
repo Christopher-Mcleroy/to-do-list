@@ -11,6 +11,7 @@ function init(){
     liListeners();
     deleteListener();
     inputListener();
+    hideInputListener();
 };
 //******************************************************************************** */
 //***************************Add button listener******************************* */
