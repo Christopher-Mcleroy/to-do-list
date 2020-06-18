@@ -6,58 +6,65 @@
 }
 body{
     font-family: sans-serif;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    height: 100vh;
+    line-height: 1.5;
+    letter-spacing: 1.1px;
 }
+
 .container {
     width: 400px;
     margin: 150px auto;
     background-color: rgb(250, 252, 255);
 }
+
+/* input and + button and h1 */
+ h1 {
+        padding: 20px;
+        display: inline-block;
+        font-weight: 200;
+        font-size: 2rem;
+    }
 input{
     width: 400px;
-}
-body {
-    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
-            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
-    height: 100vh;
-}
-ul {
-    list-style: none;
-}
-.checked{
-    color: grey;
-    text-decoration: line-through;
+    border: 1px solid grey;
 }
 .fa-plus {
     float: right;
     margin: 30px;
 }
-h1 {
-    padding: 20px;
-    display: inline-block;
-    font-weight: 200;
-    font-size: 2rem;
+.hide{
+    display: none;
 }
-li {
-padding: 15px;
+
+/* todo item box */
+.checked{
+    color: grey;
+    text-decoration: line-through;
 }
 i{
     padding: 5px;
 }
-li:nth-child(even){
-    background-color: rgb(221, 221, 221);
-}
-.hide{
-    display: none;
-}
 .fa-trash {
     float: left;
 }
-#input{
-    border: 1px solid grey;
+.fa-square{
+    float: left;
 }
-li span{
-    border: none;
-    height: auto;
-    float: right;
+#list-items span{
     width: 300px;   
 }
+#list-items div{
+    padding: 15px;
+}
+#list-items{
+    position: relative;
+}
+#list-items div:nth-child(even){
+    background-color: rgb(221, 221, 221);
+}
+span[contenteditable] {
+    outline: 0px solid transparent;
+  }
+

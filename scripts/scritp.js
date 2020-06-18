@@ -1,7 +1,6 @@
-const listItem = document.querySelectorAll('li');
-const deleteBtn = document.querySelectorAll('span');
+const listItem = document.querySelectorAll('.todo-item');
 const input = document.querySelector('input');
-const ul = document.querySelector('ul');
+const ul = document.querySelector('#list-items');
 const plusBtn = document.querySelector('.fa-plus');
 onload = init;
 //******************************************************************************** */
@@ -78,7 +77,7 @@ function deleteLi(e){
 //******************************************************************************** */
 function addItem(){
     // create li
-    let li = document.createElement('li');
+    let li = document.createElement('div');
     //make trash icon
     let trash = document.createElement('i');
     //add class to trash icon
