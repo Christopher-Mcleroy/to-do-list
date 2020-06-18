@@ -1,37 +1,28 @@
-/* ************************applied to all********************************************************************* */
+/* ************************Globle********************************************************************* */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 20px;
 }
 body {
   font-family: sans-serif;
+  font-size: 20px;
+  background: #4cb8c4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #3cd3ad,
+    #4cb8c4
+  ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
-      217deg,
-      rgba(0, 252, 13, 0.8),
-      rgba(247, 252, 0, 0) 70.71%
-    ),
-    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+    to right,
+    #3cd3ad,
+    #4cb8c4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   line-height: 1.5;
-  background: cover;
   letter-spacing: 1.1px;
   height: 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-/* ************************Container to all********************************************************************* */
-.container {
-  width: 400px;
-  margin: 150px auto;
-  background-color: rgb(250, 252, 255);
-}
-
-/* ************************h1 and + button to all********************************************************************* */
-.to-do-title {
-  background-color: #2675b2;
-  color: white;
 }
 h1 {
   padding: 10px;
@@ -39,18 +30,38 @@ h1 {
   font-weight: 200;
   font-size: 1.2rem;
 }
+i {
+  padding: 5px;
+}
 input {
   width: 400px;
   border: 1px solid grey;
   height: 60px;
   border: none;
+  font-size: 20px;
   outline: none;
   padding: 10px;
   background-color: rgb(221, 221, 221);
 }
+span[contenteditable] {
+  outline: 0px solid transparent;
+}
+
+/* ************************Container********************************************************************* */
+.container {
+  width: 400px;
+  margin: 150px auto;
+  background-color: rgb(250, 252, 255);
+}
+
+/* ************************h1 and + button ********************************************************************* */
+.to-do-title {
+  background-color: #2675b2;
+  color: white;
+}
 .fa-plus {
   float: right;
-  margin: 10px;
+  padding: 14px;
 }
 .hide {
   display: none;
@@ -60,10 +71,6 @@ input {
 .dont-break-out {
   overflow-wrap: break-word;
   word-wrap: break-word;
-}
-
-i {
-  padding: 5px;
 }
 #list-items span {
   width: 300px;
@@ -79,25 +86,18 @@ i {
 .todo-item {
   padding: 10px;
 }
-span[contenteditable] {
-  outline: 0px solid transparent;
-}
-
 .fa-trash {
   display: none !important;
 }
-
 .todo-item:hover > .fa-trash {
   display: block !important;
 }
-
 .fa-trash {
   float: right;
 }
 .fa-square {
   float: left;
 }
-
 .checked {
   color: grey;
   text-decoration: line-through;
