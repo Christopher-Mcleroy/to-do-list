@@ -44,7 +44,9 @@ function liListeners(){
 function inputListener(){
     input.addEventListener('keypress', function(e){
         if(e.keyCode === 13){
-            addItem();
+            if(input.value != ''){
+                addItem();
+            }
         };
     });
 };
