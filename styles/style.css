@@ -1,102 +1,103 @@
 /* ************************applied to all********************************************************************* */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 20px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 20px;
 }
-body{
-    font-family: sans-serif;
-    background: linear-gradient(217deg, rgba(0, 252, 13, 0.8), rgba(247, 252, 0, 0.0) 70.71%),
-    linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
-    line-height: 1.5;
-    background: cover;
-    letter-spacing: 1.1px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+body {
+  font-family: sans-serif;
+  background: linear-gradient(
+      217deg,
+      rgba(0, 252, 13, 0.8),
+      rgba(247, 252, 0, 0) 70.71%
+    ),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  line-height: 1.5;
+  background: cover;
+  letter-spacing: 1.1px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 /* ************************Container to all********************************************************************* */
 .container {
-    width: 400px;
-    margin: 150px auto;
-    background-color: rgb(250, 252, 255);
+  width: 400px;
+  margin: 150px auto;
+  background-color: rgb(250, 252, 255);
 }
 
 /* ************************h1 and + button to all********************************************************************* */
-.to-do-title{
-    background-color: #2675B2;
-    color:white;
+.to-do-title {
+  background-color: #2675b2;
+  color: white;
 }
 h1 {
-    padding: 10px;
-    display: inline-block;
-    font-weight: 200;
-    font-size: 1.2rem;
+  padding: 10px;
+  display: inline-block;
+  font-weight: 200;
+  font-size: 1.2rem;
 }
-input{
-    width: 400px;
-    border: 1px solid grey;
-    height: 60px;
-    border: none;
-    outline: none;
-    padding:10px;
+input {
+  width: 400px;
+  border: 1px solid grey;
+  height: 60px;
+  border: none;
+  outline: none;
+  padding: 10px;
 }
 .fa-plus {
-    float: right;
-    margin: 10px;
+  float: right;
+  margin: 10px;
 }
-.hide{
-    display: none;
+.hide {
+  display: none;
 }
 
 /* ************************todo item box to all********************************************************************* */
 .dont-break-out {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-  }
-  
-i{
-    padding: 5px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
-#list-items span{
-    width: 300px;   
+
+i {
+  padding: 5px;
 }
-#list-items div:nth-child(even){
-    background-color: rgb(221, 221, 221);
+#list-items span {
+  width: 300px;
 }
-#list-items{
-    position: relative;
+#list-items div:nth-child(even) {
+  background-color: rgb(221, 221, 221);
+}
+#list-items {
+  position: relative;
 }
 
 /* ************************todo item to all********************************************************************* */
-.todo-item{
-    padding: 10px;
-    
+.todo-item {
+  padding: 10px;
 }
 span[contenteditable] {
-    outline: 0px solid transparent;
-}
-
-
-.fa-trash {
-    display: none!important;
-}
-
-.todo-item:hover > .fa-trash{
-    display: block!important;
+  outline: 0px solid transparent;
 }
 
 .fa-trash {
-    float: right;
-}
-.fa-square{
-    float: left;
+  display: none !important;
 }
 
-.checked{
-    color: grey;
-    text-decoration: line-through;
+.todo-item:hover > .fa-trash {
+  display: block !important;
 }
 
+.fa-trash {
+  float: right;
+}
+.fa-square {
+  float: left;
+}
+
+.checked {
+  color: grey;
+  text-decoration: line-through;
+}
