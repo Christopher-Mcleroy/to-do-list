@@ -1,0 +1,36 @@
+{
+  "name": "to-dos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode=development",
+    "build": "webpack --mode=production",
+    "start": "webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allenwebdev/to-to-list.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/allenwebdev/to-to-list/issues"
+  },
+  "homepage": "https://github.com/allenwebdev/to-to-list#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^5.0.2",
+    "eslint": "^7.19.0",
+    "html-webpack-plugin": "^5.0.0",
+    "prettier": "2.2.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2"
+  }
+}
