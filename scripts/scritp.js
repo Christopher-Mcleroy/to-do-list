@@ -17,36 +17,26 @@ function init() {
 //***************************Add button listener******************************* */
 //******************************************************************************** */
 function hideInputListener() {
-  plusBtn.addEventListener("click", function () {
-    input.classList.toggle("hide");
-  });
+  plusBtn.addEventListener("click", () => input.classList.toggle("hide"));
 }
 //******************************************************************************** */
 //***************************Delete button listener******************************* */
 //******************************************************************************** */
 function deleteListener() {
-  ul.addEventListener("click", function (e) {
-    deleteLi(e);
-  });
+  ul.addEventListener("click", deleteLi);
 }
 //******************************************************************************** */
 //***************************Check LI listener**************************************** */
 //******************************************************************************** */
 function liListeners() {
-  ul.addEventListener("click", function (e) {
-    checked(e);
-  });
+  ul.addEventListener("click", checked);
 }
 //******************************************************************************** */
 //*****************************Text Input Listener******************************** */
 //******************************************************************************** */
 function inputListener() {
-  input.addEventListener("keypress", function (e) {
-    if (e.keyCode === 13) {
-      if (input.value != "") {
-        addItem();
-      }
-    }
+  input.addEventListener("keypress", (e) => {
+    if (e.keyCode === 13 && input.value != "") addItem();
   });
 }
 //******************************************************************************** */
@@ -67,9 +57,7 @@ function checked(e) {
 //***********************Deletes Li when delete btn is pressed********************* */
 //******************************************************************************** */
 function deleteLi(e) {
-  if (e.target.classList == "fas fa-trash") {
-    e.target.parentElement.remove();
-  }
+  if (e.target.classList == "fas fa-trash") e.target.parentElement.remove();
 }
 //******************************************************************************** */
 //**********************Adds li when input is submitted**************************** */
